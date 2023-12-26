@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Sistem</title>
+    <script src="otentikasi.js"></script>
+    <style>
+        body{
+            background-color: pink;
+        }
+
+        #board1{
+            margin: auto;
+            padding: 2em;
+        }
+
+        #board2{
+            background-color: white;
+            width: 200px;
+            height: 170px;
+            margin: auto;
+            margin-top: 0.5em;
+            padding: 2em;
+            border-radius: 0.5em;
+            border: 2px solid lightgray;
+            text-align: center;
+        }
+        
+        h2{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: white;
+
+        }
+
+        button{
+            background-color: palevioletred;
+            color: white;
+            font-size: medium;
+            font-weight: bold;
+            border: none;
+            border-radius: 0.5em;
+            width: 100px;
+            height: 28px;
+        }
+    </style>
+</head>
+<body>
+    <div id="board1">
+        <h2>Login</h2>
+        <div id="board2">
+            <form id="form-login">
+                <label for="username">Username</label><br>
+                <input type="text" id="username" name="username"><br><br>
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password"><br><br>
+                <button type="button" onclick="login()">Login</button>
+            </form>
+        </div>
+    </div>    
+</body>
+</html>
