@@ -52,13 +52,13 @@
     </div>
     
     <script>
-        var chatbox = document.getElementById("chatbox");
-        var pesan = document.getElementById("pesan");
+        let chatbox = document.getElementById("chatbox");
+        let pesan = document.getElementById("pesan");
     
         function kirimPesan() {
-            var isiPesan = pesan.value.trim();
+            let isiPesan = pesan.value.trim();
             if (isiPesan != "") {
-                var divPesan = document.createElement("div");
+                let divPesan = document.createElement("div");
                 divPesan.className = "pesan";
                 divPesan.innerHTML = isiPesan;
                 chatbox.appendChild(divPesan);
